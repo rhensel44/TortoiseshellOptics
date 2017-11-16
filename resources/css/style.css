@@ -60,6 +60,12 @@ nav a {
   text-decoration: none;
 }
 
+.menubutton {
+  display: none;
+  color: white;
+  margin-right: 3rem;
+}
+
 .bannercontainer {
   display: flex;
   justify-content: flex-end;
@@ -136,6 +142,8 @@ nav a {
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
   width: 100%;
+  color: white;
+  text-align: center;
 }
 
 .philosophy {
@@ -182,6 +190,15 @@ footer img {
     background-position: 20%;
     height: 17rem;
   }
+  .topname {
+    display: none;
+  }
+  nav a {
+    display: none;
+  }
+  .menubutton {
+    display: block;
+  }
   .midbanner {
     margin: 9rem 0 auto 0;
     font-size: 1rem;
@@ -191,5 +208,41 @@ footer img {
   .midbanner p {
     padding: 0.5rem 0;
   }
-  
+  .threeservices {
+    height: auto;
+    margin-top: 2.23rem;
+    margin-bottom: 3.77rem;
+  }
+  .threeservices .flexcontainer {
+    flex-direction: column;
+  }
+  .threeservices .flexcontainer div {
+    margin-top: 1.54rem;
+    justify-content: center;
+    height: auto;
+  }
+  .threeservices .flexcontainer div h4 {
+    margin-top: 1rem;
+    font-size: 0.77rem;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+  .bottom div {
+    width: 100%;
+  }
+  .bottom div p {
+    font-size: 0.77rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+  footer {
+    justify-content: center;
+  }
+  footer h5 {
+    display: none;
+  }
+  footer img {
+    margin: 0 auto 10rem; auto;
+  }
 }
