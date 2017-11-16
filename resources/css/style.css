@@ -20,8 +20,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-
 }
 
 .topbar {
@@ -61,7 +59,7 @@ nav a {
 }
 
 .menubutton {
-  display: none;
+  display: none !important;
   color: white;
   margin-right: 3rem;
 }
@@ -175,6 +173,9 @@ footer img {
     height: 22rem;
     background-position: left;
   }
+  .menubutton {
+    display: none;
+  }
   .midbanner {
     margin-top: 15rem;
     margin-right: 2rem;
@@ -193,11 +194,11 @@ footer img {
   .topname {
     display: none;
   }
-  nav a {
+  nav {
     display: none;
   }
   .menubutton {
-    display: block;
+    display: block !important;
   }
   .midbanner {
     margin: 9rem 0 auto 0;
