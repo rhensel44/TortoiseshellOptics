@@ -1,4 +1,195 @@
 html {
   font-size: 18px;
   font-family: Helvetica;
+  background-color: white;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.top {
+  background-image: url("../pictures/glasses-bg.png");
+  height: 30rem;
+  padding-top: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+.topbar {
+  display: flex;
+  background-color: cadetblue;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.topbar img {
+  margin: 1rem 1rem 1rem 2rem;
+  height: 1.5rem;
+}
+
+.topbar span {
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar div {
+  align-items: center;
+  display: flex;
+}
+
+nav a {
+  display: inline;
+  padding: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.bannercontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.midbanner {
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  display: inline-block;
+}
+
+.midbanner p {
+  padding: 1.5rem 5rem;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  width: auto;
+}
+
+.flexcontainer .midbanner {
+    justify-content: flex-end;
+}
+
+.flexcontainer {
+  display: flex;
+}
+
+.threeservices .flexcontainer {
+  justify-content: center;
+  align-items: center;
+}
+
+.threeservices {
+  height: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.threeservices .flexcontainer div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.threeservices .flexcontainer div img {
+  width: 3.5rem;
+}
+
+.bottom {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.bottom div {
+  width: 35%;
+}
+
+.bottom div h3 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.philosophy {
+  margin-right: 5%;
+}
+
+/*footer section*/
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+/*media queries section*/
+
+@media only screen and (max-width: 768px) {
+  .topbar {
+    margin-top: 0;
+  }
+  .container {
+    width: 100%;
+  }
+  .top {
+    height: 22rem;
+    background-position: left;
+  }
+  .midbanner {
+    margin-top: 15rem;
+    margin-right: 2rem;
+  }
+  .midbanner p {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .top {
+    background-position: 20%;
+    height: 17rem;
+  }
+  .midbanner {
+    margin: 9rem 0 auto 0;
+    font-size: 1rem;
+    align-items: center;
+    width: 100%
+  }
+  .midbanner p {
+    padding: 0.5rem 0;
+  }
+  
 }
